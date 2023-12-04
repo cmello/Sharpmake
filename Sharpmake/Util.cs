@@ -315,7 +315,6 @@ namespace Sharpmake
                         if (version == (int)DBVersion.Version)
                         {
                             // Read the list of files.
-                            IFormatter formatter = new BinaryFormatter();
                             string dbAsJson = binReader.ReadString();
 
                             var tmpDbFiles = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, DateTime>>(dbAsJson, GetCleanupDatabaseJsonSerializerOptions());
