@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project>
-  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -33,7 +32,7 @@
     <!-- MsBuild will properly handle the skip if needed. -->
     <!-- https://github.com/dotnet/project-system/blob/main/docs/repo/up-to-date-check-implementation.md -->
     <DisableFastUpToDateCheck>True</DisableFastUpToDateCheck>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
-  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 </Project>
