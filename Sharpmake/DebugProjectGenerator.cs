@@ -398,9 +398,5 @@ namespace Sharpmake
     {
         public AssemblyVersionException() : base() { }
         public AssemblyVersionException(string msg) : base(msg) { }
-
-        protected AssemblyVersionException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        { }
     }
 }
